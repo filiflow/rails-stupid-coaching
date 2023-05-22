@@ -1,0 +1,21 @@
+<div class="containers">
+
+  <div id=h1>
+    <h1><%="Your stupid coaching"%></h1>
+  </div>
+
+  <div id=blockquote >
+    <p><%=params[:answer]%></p>
+    <p><%="- you"%></p>
+  </div>
+
+  <div id=answercoach>
+    <p id=boldanswer><%= @coach_answer %></p>
+    <p><%="- your coach"%></p>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <p><%= link_to "Ask a new question", ask_path, class:"btn btn-primary" %></p>
+  </div>
+
+</div>
